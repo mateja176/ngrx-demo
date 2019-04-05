@@ -7,14 +7,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
 import { SetNameComponent } from './set-name.component';
-import reducer from './store/reducer';
+import { reducerMap } from './store/reducer';
 
 @NgModule({
   declarations: [AppComponent, HelloComponent, SetNameComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    StoreModule.forRoot(reducer),
+    StoreModule.forRoot(reducerMap),
     StoreDevtoolsModule.instrument({
       maxAge: 25,
       logOnly: environment.production,
