@@ -1,4 +1,4 @@
-import { combineReducers, createSelector } from '@ngrx/store';
+import { combineReducers, createFeatureSelector } from '@ngrx/store';
 import { NameAction } from './name/name.actions';
 import { Name, name } from './name/name.reducer';
 
@@ -12,10 +12,4 @@ export default function(state: State, action: NameAction) {
   })(state, action);
 }
 
-/**
- * preferred over feature selector
- */
-export const selectName = createSelector<State, string, string>(
-  state => state.name,
-  a => a,
-);
+export const selectName = createFeatureSelector<State, string>('name');
