@@ -1,6 +1,6 @@
 import { ActionReducerMap, createFeatureSelector } from '@ngrx/store';
-import { NameAction } from './actions/name';
-import { Name, name } from './name/name.reducer';
+import { NameAction } from '../actions/name';
+import { Name, name } from './name';
 
 export interface State {
   name: Name;

@@ -1,5 +1,5 @@
 import { Action } from '@ngrx/store';
-import { Name } from '../name/name.reducer';
+import { Name } from '../reducer/name';
 
 export enum NameActionTypes {
   SetName = '[Name] Set',
