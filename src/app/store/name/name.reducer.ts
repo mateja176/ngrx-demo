@@ -1,4 +1,4 @@
-import { NameAction, NameActionTypes } from './name.actions';
+import { NameAction, NameActionTypes } from '../actions/name';
 
 export type Name = string;
 
